@@ -10,6 +10,7 @@ module.exports = router => {
 
     router.post('/comments', CommentController.create);
     router.get('/comments', CommentController.getAll)
+    router.get('/comments:id', CommentController.getOne)
 
     return router;
 }
